@@ -24,15 +24,15 @@
             <div class="cyl-card-img-wrap">
               {%- if block.settings.image != blank -%}
                 <img
-                  src="{{ block.settings.image | img_url: '600x' }}"
-                  srcset="{{ block.settings.image | img_url: '400x' }} 400w,
-                          {{ block.settings.image | img_url: '600x' }} 600w,
-                          {{ block.settings.image | img_url: '800x' }} 800w"
+                  src="{{ block.settings.image | img_url: '600x600' }}"
+                  srcset="{{ block.settings.image | img_url: '400x400' }} 400w,
+                          {{ block.settings.image | img_url: '600x600' }} 600w,
+                          {{ block.settings.image | img_url: '800x800' }} 800w"
                   sizes="(max-width: 767px) 70vw, 25vw"
                   alt="{{ block.settings.image.alt | default: block.settings.label | escape }}"
                   loading="lazy"
-                  width="{{ block.settings.image.width }}"
-                  height="{{ block.settings.image.height }}"
+                  width="600"
+                  height="600"
                 >
               {%- else -%}
                 {{ 'product-1' | placeholder_svg_tag: 'cyl-placeholder' }}
@@ -127,7 +127,7 @@
   /* ── Image ── */
   #cyl-{{ section.id }} .cyl-card-img-wrap {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1; /* carré 1:1 */
     overflow: hidden;
   }
 
