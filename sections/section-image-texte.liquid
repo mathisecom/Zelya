@@ -254,12 +254,18 @@
       order: -1;
     }
 
+    #biodance-{{ section.id }} .biodance-image-wrap {
+      padding: 0 20px;
+    }
+
     #biodance-{{ section.id }} .biodance-image-wrap img,
     #biodance-{{ section.id }} .biodance-image-wrap svg,
     #biodance-{{ section.id }} .biodance-placeholder-svg {
-      border-radius: 0 0 50% 50% / 0 0 8% 8%;
+      border-radius: 20px;
       max-width: 100%;
-      aspect-ratio: 4 / 3.5;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
     }
 
     #biodance-{{ section.id }} .biodance-content {
