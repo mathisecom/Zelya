@@ -25,17 +25,16 @@
       "block_order": [
         "message"
       ],
-      "disabled": true,
       "settings": {
         "enable_sticky": false,
-        "autoplay": false,
+        "autoplay": true,
         "cycle_speed": 6,
         "text_size": "text-xs",
-        "navigation_mode": "scrolling",
+        "navigation_mode": "arrows",
         "scrolling_speed": 10,
-        "background": "#1a1a1a",
+        "background": "#fffaf3",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#121212"
       }
     },
     "header": {
