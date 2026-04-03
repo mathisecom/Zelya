@@ -156,13 +156,21 @@
             "image": "shopify://shop_images/Nouveau_projet_11.png",
             "url": ""
           }
+        },
+        "image_mafgeY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/allure-logo_1.webp",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "image_cqfD6L",
         "image_NHXtUm",
         "image_a4QzQd",
-        "image_i843mn"
+        "image_i843mn",
+        "image_mafgeY"
       ],
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
@@ -174,8 +182,8 @@
         "heading_size": 18,
         "heading_size_mobile": 18,
         "heading_height": 130,
-        "scrolling_velocity": 30,
-        "scrolling_velocity_mobile": 30,
+        "scrolling_velocity": 18,
+        "scrolling_velocity_mobile": 16,
         "scrolling_direction": "left",
         "pause_hover": false,
         "scrolling_gap": 70,
@@ -195,11 +203,71 @@
         "padding_bottom": 0,
         "padding_horizontal": 5,
         "padding_horizontal_mobile": 0,
-        "full_width": false,
+        "full_width": true,
         "content_width": 1200,
         "border_thickness": 0,
         "section_radius": 0,
         "lazy": true
+      }
+    },
+    "testimonials_Wiif4m": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_6XVtPY": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "John S.",
+            "title": "Testimonial 1",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_ke4Vii": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Mary U.",
+            "title": "Testimonial 2",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_bmhjJj": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Joshua A.",
+            "title": "Testimonial 3",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_6XVtPY",
+        "testimonial_ke4Vii",
+        "testimonial_bmhjJj"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
       }
     },
     "related-products": {
@@ -208,12 +276,12 @@
         "recommendations_count": 6,
         "products": [],
         "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
+        "stack_products": false,
+        "show_progress_bar": true,
         "products_per_row_mobile": "1",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "You may also like",
+        "title": "Vous Aimerez Aussi",
         "content": "",
         "background": "",
         "background_gradient": "",
@@ -228,6 +296,7 @@
   "order": [
     "main",
     "logoscroll_h3JyXz",
+    "testimonials_Wiif4m",
     "related-products"
   ]
 }
