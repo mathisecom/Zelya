@@ -1,0 +1,454 @@
+{% comment %}
+  Section: Biodance - Clean Ingredients / More Than Hype
+  Responsive: Desktop (2-col) + Mobile (stacked)
+{% endcomment %}
+
+<section class="biodance-section" id="biodance-{{ section.id }}">
+  <div class="biodance-wrapper">
+
+    {%- comment -%} ── LEFT COLUMN ── {%- endcomment -%}
+    <div class="biodance-content">
+
+      <div class="biodance-eyebrow">
+        <span>{{ section.settings.eyebrow | default: 'MORE THAN HYPE' }}</span>
+        <div class="biodance-eyebrow-line"></div>
+      </div>
+
+      <h2 class="biodance-headline">{{ section.settings.headline | default: 'At Biodance, We Use the power of clean, top-grade ingredients.' }}</h2>
+
+      <p class="biodance-body">{{ section.settings.body_text | default: "We gently reveal your skin's natural glow by balancing moisture and oil, delivering results you'll love." }}</p>
+
+      <ul class="biodance-badges">
+
+        {%- for i in (1..4) -%}
+          {%- liquid
+            assign label_key = 'badge_label_' | append: i
+            assign icon_key  = 'badge_icon_'  | append: i
+            assign label_val = section.settings[label_key]
+            assign icon_val  = section.settings[icon_key]
+          -%}
+          {%- if label_val != blank -%}
+            <li class="biodance-badge-item">
+              <div class="biodance-badge-icon">
+                {%- if icon_val != blank -%}
+                  {{ icon_val }}
+                {%- else -%}
+                  {%- case i -%}
+                    {%- when 1 -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M24 4c-2 6-8 10-8 16a8 8 0 0 0 16 0c0-6-6-10-8-16z"/>
+                      <path d="M14 28c-4 2-6 6-4 10h28c2-4 0-8-4-10"/>
+                      <path d="M18 36v4M30 36v4"/>
+                    </svg>
+                    {%- when 2 -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                      <ellipse cx="18" cy="26" rx="10" ry="8"/>
+                      <path d="M28 26c0-4 4-8 8-6s4 8 0 10"/>
+                      <path d="M12 22c0-4 4-10 8-12"/>
+                      <circle cx="15" cy="24" r="1.5" fill="currentColor"/>
+                      <path d="M10 30c-2 2-2 6 0 6M26 30c2 2 2 6 0 6"/>
+                    </svg>
+                    {%- when 3 -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="12" y="18" width="24" height="22" rx="4"/>
+                      <path d="M18 18v-4a6 6 0 0 1 12 0v4"/>
+                      <circle cx="24" cy="29" r="3"/>
+                      <path d="M24 32v4"/>
+                    </svg>
+                    {%- when 4 -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M24 6 L38 12 L38 26 C38 34 32 40 24 44 C16 40 10 34 10 26 L10 12 Z"/>
+                      <polyline points="18,24 22,28 30,20"/>
+                    </svg>
+                  {%- endcase -%}
+                {%- endif -%}
+              </div>
+              <div class="biodance-badge-text">{{ label_val }}</div>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+
+      </ul>
+    </div>
+
+    {%- comment -%} ── RIGHT COLUMN (image) ── {%- endcomment -%}
+    <div class="biodance-image-wrap">
+      {%- if section.settings.image != blank -%}
+        <img
+          src="{{ section.settings.image | img_url: '900x' }}"
+          srcset="{{ section.settings.image | img_url: '600x' }} 600w,
+                  {{ section.settings.image | img_url: '900x' }} 900w,
+                  {{ section.settings.image | img_url: '1200x' }} 1200w"
+          sizes="(max-width: 767px) 100vw, 50vw"
+          alt="{{ section.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ section.settings.image.width }}"
+          height="{{ section.settings.image.height }}"
+        >
+      {%- else -%}
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'biodance-placeholder-svg' }}
+      {%- endif -%}
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* ── Reset & variables ── */
+  #biodance-{{ section.id }} {
+    --bio-bg:       {{ section.settings.bg_color | default: '#ffffff' }};
+    --bio-text:     {{ section.settings.text_color | default: '#111111' }};
+    --bio-accent:   {{ section.settings.accent_color | default: '#111111' }};
+    --bio-label:    {{ section.settings.label_color | default: '#555555' }};
+    --bio-divider:  {{ section.settings.divider_color | default: '#dddddd' }};
+    --bio-radius:   {{ section.settings.image_radius | default: '50%' }};
+
+    background: var(--bio-bg);
+    color: var(--bio-text);
+    padding: {{ section.settings.section_padding_v | default: 80 }}px {{ section.settings.section_padding_h | default: 60 }}px;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+
+  #biodance-{{ section.id }} *,
+  #biodance-{{ section.id }} *::before,
+  #biodance-{{ section.id }} *::after {
+    box-sizing: border-box;
+  }
+
+  /* ── Wrapper: 2-col grid desktop ── */
+  #biodance-{{ section.id }} .biodance-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  /* ── Eyebrow ── */
+  #biodance-{{ section.id }} .biodance-eyebrow {
+    margin-bottom: 18px;
+  }
+
+  #biodance-{{ section.id }} .biodance-eyebrow span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--bio-label);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  #biodance-{{ section.id }} .biodance-eyebrow-line {
+    width: 32px;
+    height: 2px;
+    background: var(--bio-accent);
+  }
+
+  /* ── Headline ── */
+  #biodance-{{ section.id }} .biodance-headline {
+    font-size: clamp(28px, 3.5vw, 44px);
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    color: var(--bio-text);
+    margin: 0 0 20px;
+  }
+
+  /* ── Body ── */
+  #biodance-{{ section.id }} .biodance-body {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--bio-label);
+    margin: 0 0 36px;
+    max-width: 440px;
+  }
+
+  /* ── Badge list ── */
+  #biodance-{{ section.id }} .biodance-badges {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #biodance-{{ section.id }} .biodance-badge-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--bio-divider);
+  }
+
+  #biodance-{{ section.id }} .biodance-badge-item:last-child {
+    border-bottom: none;
+  }
+
+  #biodance-{{ section.id }} .biodance-badge-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    color: var(--bio-accent);
+  }
+
+  #biodance-{{ section.id }} .biodance-badge-icon svg,
+  #biodance-{{ section.id }} .biodance-badge-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  #biodance-{{ section.id }} .biodance-badge-text {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--bio-label);
+  }
+
+  /* ── Image ── */
+  #biodance-{{ section.id }} .biodance-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #biodance-{{ section.id }} .biodance-image-wrap img,
+  #biodance-{{ section.id }} .biodance-image-wrap svg {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: var(--bio-radius);
+    object-fit: cover;
+    aspect-ratio: 1 / 1.05;
+    display: block;
+  }
+
+  /* ── Placeholder SVG ── */
+  #biodance-{{ section.id }} .biodance-placeholder-svg {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: var(--bio-radius);
+    background: #f5f5f5;
+    aspect-ratio: 1 / 1.05;
+    display: block;
+  }
+
+  /* ────────────────────────────────
+     MOBILE  ≤ 767px — stacked layout
+     ──────────────────────────────── */
+  @media screen and (max-width: 767px) {
+    #biodance-{{ section.id }} {
+      padding: 0 0 48px;
+    }
+
+    #biodance-{{ section.id }} .biodance-wrapper {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    /* Image comes first on mobile */
+    #biodance-{{ section.id }} .biodance-image-wrap {
+      order: -1;
+    }
+
+    #biodance-{{ section.id }} .biodance-image-wrap img,
+    #biodance-{{ section.id }} .biodance-image-wrap svg,
+    #biodance-{{ section.id }} .biodance-placeholder-svg {
+      border-radius: 0 0 50% 50% / 0 0 8% 8%;
+      max-width: 100%;
+      aspect-ratio: 4 / 3.5;
+    }
+
+    #biodance-{{ section.id }} .biodance-content {
+      padding: 0 20px;
+    }
+
+    #biodance-{{ section.id }} .biodance-headline {
+      font-size: clamp(26px, 7vw, 34px);
+    }
+
+    #biodance-{{ section.id }} .biodance-body {
+      font-size: 14px;
+      max-width: 100%;
+    }
+
+    #biodance-{{ section.id }} .biodance-badge-text {
+      font-size: 10px;
+    }
+  }
+
+  /* ── Tablet 768–1023px ── */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #biodance-{{ section.id }} {
+      padding: 60px 32px;
+    }
+
+    #biodance-{{ section.id }} .biodance-wrapper {
+      gap: 40px;
+    }
+
+    #biodance-{{ section.id }} .biodance-headline {
+      font-size: 32px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Biodance - Ingredients",
+  "tag": "section",
+  "class": "biodance-clean-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Contenu"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Étiquette eyebrow",
+      "default": "MORE THAN HYPE"
+    },
+    {
+      "type": "textarea",
+      "id": "headline",
+      "label": "Titre principal",
+      "default": "At Biodance, We Use the power of clean, top-grade ingredients."
+    },
+    {
+      "type": "textarea",
+      "id": "body_text",
+      "label": "Texte descriptif",
+      "default": "We gently reveal your skin's natural glow by balancing moisture and oil, delivering results you'll love."
+    },
+    {
+      "type": "header",
+      "content": "Badges (icônes + libellés)"
+    },
+    {
+      "type": "text",
+      "id": "badge_label_1",
+      "label": "Badge 1 – Libellé",
+      "default": "SAFE INGREDIENTS"
+    },
+    {
+      "type": "html",
+      "id": "badge_icon_1",
+      "label": "Badge 1 – SVG personnalisé (optionnel)"
+    },
+    {
+      "type": "text",
+      "id": "badge_label_2",
+      "label": "Badge 2 – Libellé",
+      "default": "CRUELTY FREE FORMULA"
+    },
+    {
+      "type": "html",
+      "id": "badge_icon_2",
+      "label": "Badge 2 – SVG personnalisé (optionnel)"
+    },
+    {
+      "type": "text",
+      "id": "badge_label_3",
+      "label": "Badge 3 – Libellé",
+      "default": "FRAGRANCE FREE"
+    },
+    {
+      "type": "html",
+      "id": "badge_icon_3",
+      "label": "Badge 3 – SVG personnalisé (optionnel)"
+    },
+    {
+      "type": "text",
+      "id": "badge_label_4",
+      "label": "Badge 4 – Libellé",
+      "default": "EWG SAFE GRADE"
+    },
+    {
+      "type": "html",
+      "id": "badge_icon_4",
+      "label": "Badge 4 – SVG personnalisé (optionnel)"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Photo du groupe"
+    },
+    {
+      "type": "text",
+      "id": "image_radius",
+      "label": "Border-radius de l'image",
+      "default": "50%",
+      "info": "Ex: 50% pour ovale, 24px pour arrondi, 0 pour carré"
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Fond de section",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Titre",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent (icônes, barre eyebrow)",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Textes secondaires",
+      "default": "#555555"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Couleur des séparateurs",
+      "default": "#dddddd"
+    },
+    {
+      "type": "header",
+      "content": "Espacement"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_v",
+      "label": "Padding vertical (px)",
+      "min": 20,
+      "max": 160,
+      "step": 4,
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "section_padding_h",
+      "label": "Padding horizontal (px)",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Biodance - Ingredients"
+    }
+  ]
+}
+{% endschema %}
