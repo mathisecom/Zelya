@@ -348,8 +348,8 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "testimonial_card_background": "",
-        "testimonial_card_text_color": ""
+        "testimonial_card_background": "#f1f4f6",
+        "testimonial_card_text_color": "#000000"
       }
     }
   },
