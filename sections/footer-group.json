@@ -78,8 +78,8 @@
         "newsletter": {
           "type": "newsletter",
           "settings": {
-            "image": "shopify://shop_images/POP_11_1.png",
-            "image_width": 180,
+            "image": "shopify://shop_images/POP_11_2.png",
+            "image_width": 190,
             "heading_size": "h3",
             "title": "Sign up for new stories and personal offers",
             "content": ""
