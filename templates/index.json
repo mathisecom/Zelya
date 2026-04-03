@@ -141,7 +141,7 @@
           "settings": {
             "image": "shopify://shop_images/17665480556f948b43e0330036a390fb039f3cf7fc_thumbnail_3600x_b5a3ac8f-3a9f-464e-9b61-84e5ca13c854.webp",
             "label": "Visage",
-            "collection_url": "",
+            "collection_url": "shopify://collections/visages",
             "border_color": "#362828"
           }
         },
@@ -150,7 +150,7 @@
           "settings": {
             "image": "shopify://shop_images/17665480944dd41369b657c8fc3cb68f38ca70b4a9_thumbnail_3600x_a5a1ac72-ce4f-48a7-ae1f-e51a2bbde83e.webp",
             "label": "Lèvres",
-            "collection_url": "",
+            "collection_url": "shopify://collections/levres",
             "border_color": "#362828"
           }
         },
@@ -159,7 +159,7 @@
           "settings": {
             "image": "shopify://shop_images/1766548121f695d7aa476d1661e3329edbdd09418a_thumbnail_3600x_d537a0e5-2d94-4cd0-bd8b-fc0b7d91dde2.webp",
             "label": "Yeux",
-            "collection_url": "",
+            "collection_url": "shopify://collections/yeux",
             "border_color": "#362828"
           }
         },
@@ -168,7 +168,7 @@
           "settings": {
             "image": "shopify://shop_images/17665481375e4044c7c4556c7edb131ae4c16c8460_thumbnail_3600x_723e7afa-b405-460c-a6ab-365407b4283e.webp",
             "label": "Accessoires",
-            "collection_url": "",
+            "collection_url": "shopify://collections/accessoires",
             "border_color": "#362828"
           }
         }
