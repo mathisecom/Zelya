@@ -119,6 +119,82 @@
         "input_text_color": ""
       }
     },
+    "logoscroll_h3JyXz": {
+      "type": "logoscroll",
+      "blocks": {
+        "image_cqfD6L": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elle-logo_1.webp",
+            "url": ""
+          }
+        },
+        "image_NHXtUm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bazaar-logo_1.webp",
+            "url": ""
+          }
+        },
+        "image_a4QzQd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/vogue-logo_1.webp",
+            "url": ""
+          }
+        },
+        "image_i843mn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Nouveau_projet_11.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_cqfD6L",
+        "image_NHXtUm",
+        "image_a4QzQd",
+        "image_i843mn"
+      ],
+      "name": "SS - Scrolling logo cloud #5",
+      "settings": {
+        "layout_radius": 30,
+        "layout_border_thickness": 0,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "scrolling_velocity": 30,
+        "scrolling_velocity_mobile": 30,
+        "scrolling_direction": "left",
+        "pause_hover": false,
+        "scrolling_gap": 70,
+        "scrolling_gap_mobile": 30,
+        "card_width_desktop": 130,
+        "card_width_mobile": 100,
+        "heading_color": "#121212",
+        "layout_bg_color": "#FFFFFF",
+        "layout_border_color": "#121212",
+        "background_color": "#FFFFFF",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 0,
+        "full_width": false,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -144,6 +220,7 @@
   },
   "order": [
     "main",
+    "logoscroll_h3JyXz",
     "related-products"
   ]
 }
