@@ -1,0 +1,399 @@
+{% comment %}
+  Section: Curate Your Look – Collection Categories
+  Desktop : 4 colonnes
+  Mobile  : slider horizontal (scroll snap natif, no JS lib required)
+{% endcomment %}
+
+<section class="cyl-section" id="cyl-{{ section.id }}">
+
+  {%- if section.settings.title != blank -%}
+    <h2 class="cyl-title">{{ section.settings.title }}</h2>
+  {%- endif -%}
+
+  <div class="cyl-track-wrapper">
+    <ul class="cyl-track">
+
+      {%- for block in section.blocks -%}
+        {%- assign border_color = block.settings.border_color | default: '#f0c040' -%}
+        <li class="cyl-card" {{ block.shopify_attributes }} style="--card-border: {{ border_color }};">
+
+          <a class="cyl-card-link"
+             href="{{ block.settings.collection_url | default: '#' }}"
+             aria-label="{{ block.settings.label }}">
+
+            <div class="cyl-card-img-wrap">
+              {%- if block.settings.image != blank -%}
+                <img
+                  src="{{ block.settings.image | img_url: '600x' }}"
+                  srcset="{{ block.settings.image | img_url: '400x' }} 400w,
+                          {{ block.settings.image | img_url: '600x' }} 600w,
+                          {{ block.settings.image | img_url: '800x' }} 800w"
+                  sizes="(max-width: 767px) 70vw, 25vw"
+                  alt="{{ block.settings.image.alt | default: block.settings.label | escape }}"
+                  loading="lazy"
+                  width="{{ block.settings.image.width }}"
+                  height="{{ block.settings.image.height }}"
+                >
+              {%- else -%}
+                {{ 'product-1' | placeholder_svg_tag: 'cyl-placeholder' }}
+              {%- endif -%}
+            </div>
+
+            {%- if block.settings.label != blank -%}
+              <span class="cyl-card-label" style="color: {{ border_color }};">
+                {{ block.settings.label }}
+              </span>
+            {%- endif -%}
+
+          </a>
+        </li>
+      {%- endfor -%}
+
+    </ul>
+
+    {%- comment -%} Indicateurs dots (mobile uniquement) {%- endcomment -%}
+    <div class="cyl-dots" aria-hidden="true">
+      {%- for block in section.blocks -%}
+        <span class="cyl-dot {%- if forloop.first %} cyl-dot--active{%- endif -%}"></span>
+      {%- endfor -%}
+    </div>
+  </div>
+
+</section>
+
+<style>
+  #cyl-{{ section.id }} {
+    --cyl-bg:           {{ section.settings.bg_color | default: '#ffffff' }};
+    --cyl-title-color:  {{ section.settings.title_color | default: '#111111' }};
+    --cyl-card-radius:  {{ section.settings.card_radius | default: 20 }}px;
+    --cyl-border-width: {{ section.settings.border_width | default: 3 }}px;
+    --cyl-gap:          20px;
+
+    background: var(--cyl-bg);
+    padding: {{ section.settings.pad_v | default: 60 }}px {{ section.settings.pad_h | default: 40 }}px;
+    box-sizing: border-box;
+  }
+
+  #cyl-{{ section.id }} *, #cyl-{{ section.id }} *::before, #cyl-{{ section.id }} *::after {
+    box-sizing: border-box;
+  }
+
+  /* ── Title ── */
+  #cyl-{{ section.id }} .cyl-title {
+    text-align: center;
+    font-size: clamp(22px, 3vw, 36px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--cyl-title-color);
+    margin: 0 0 36px;
+  }
+
+  /* ── Track wrapper ── */
+  #cyl-{{ section.id }} .cyl-track-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* ── Grid desktop ── */
+  #cyl-{{ section.id }} .cyl-track {
+    display: grid;
+    grid-template-columns: repeat({{ section.blocks.size | at_most: 4 }}, 1fr);
+    gap: var(--cyl-gap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ── Card ── */
+  #cyl-{{ section.id }} .cyl-card {
+    border: var(--cyl-border-width) solid var(--card-border);
+    border-radius: var(--cyl-card-radius);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  #cyl-{{ section.id }} .cyl-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.10);
+  }
+
+  #cyl-{{ section.id }} .cyl-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* ── Image ── */
+  #cyl-{{ section.id }} .cyl-card-img-wrap {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+  }
+
+  #cyl-{{ section.id }} .cyl-card-img-wrap img,
+  #cyl-{{ section.id }} .cyl-card-img-wrap svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+
+  #cyl-{{ section.id }} .cyl-card:hover .cyl-card-img-wrap img {
+    transform: scale(1.04);
+  }
+
+  /* Placeholder */
+  #cyl-{{ section.id }} .cyl-placeholder {
+    background: #f5f5f5;
+  }
+
+  /* ── Label ── */
+  #cyl-{{ section.id }} .cyl-card-label {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    padding: 10px 8px 12px;
+    line-height: 1;
+  }
+
+  /* ── Dots (hidden desktop) ── */
+  #cyl-{{ section.id }} .cyl-dots {
+    display: none;
+  }
+
+  /* ──────────────────────────────
+     MOBILE ≤ 767px — Slider
+  ────────────────────────────── */
+  @media screen and (max-width: 767px) {
+    #cyl-{{ section.id }} {
+      padding: {{ section.settings.pad_v | default: 60 }}px 0;
+    }
+
+    #cyl-{{ section.id }} .cyl-title {
+      padding: 0 20px;
+      margin-bottom: 24px;
+    }
+
+    /* Scroll container */
+    #cyl-{{ section.id }} .cyl-track {
+      display: flex;
+      grid-template-columns: unset;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      gap: 14px;
+      padding: 4px 20px 16px;
+    }
+
+    #cyl-{{ section.id }} .cyl-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Each card snaps */
+    #cyl-{{ section.id }} .cyl-card {
+      flex: 0 0 72vw;
+      max-width: 300px;
+      scroll-snap-align: center;
+    }
+
+    /* Dots */
+    #cyl-{{ section.id }} .cyl-dots {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+      margin-top: 12px;
+      padding: 0 20px;
+    }
+
+    #cyl-{{ section.id }} .cyl-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #d0d0d0;
+      transition: background 0.3s, width 0.3s;
+    }
+
+    #cyl-{{ section.id }} .cyl-dot--active {
+      background: var(--cyl-title-color, #111);
+      width: 20px;
+      border-radius: 4px;
+    }
+  }
+
+  /* ── Tablet ── */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #cyl-{{ section.id }} {
+      padding: 48px 24px;
+    }
+
+    #cyl-{{ section.id }} .cyl-track {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
+<script>
+  (function() {
+    var section = document.getElementById('cyl-{{ section.id }}');
+    if (!section) return;
+
+    var track = section.querySelector('.cyl-track');
+    var dots  = section.querySelectorAll('.cyl-dot');
+    if (!track || !dots.length) return;
+
+    function updateDots() {
+      var cards     = track.querySelectorAll('.cyl-card');
+      var trackLeft = track.getBoundingClientRect().left;
+      var center    = track.getBoundingClientRect().width / 2;
+      var closest   = 0;
+      var minDist   = Infinity;
+
+      cards.forEach(function(card, i) {
+        var cardCenter = card.getBoundingClientRect().left - trackLeft + card.offsetWidth / 2;
+        var dist = Math.abs(cardCenter - center);
+        if (dist < minDist) { minDist = dist; closest = i; }
+      });
+
+      dots.forEach(function(d, i) {
+        d.classList.toggle('cyl-dot--active', i === closest);
+      });
+    }
+
+    track.addEventListener('scroll', updateDots, { passive: true });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Curate Your Look",
+  "tag": "section",
+  "class": "cyl-section-wrap",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "Curate Your Look"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Fond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#111111"
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "Arrondi des cartes (px)",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Épaisseur bordure (px)",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "pad_v",
+      "label": "Padding vertical (px)",
+      "min": 20,
+      "max": 120,
+      "step": 4,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "pad_h",
+      "label": "Padding horizontal desktop (px)",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category_card",
+      "name": "Carte catégorie",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Libellé",
+          "default": "Visage"
+        },
+        {
+          "type": "url",
+          "id": "collection_url",
+          "label": "Lien collection"
+        },
+        {
+          "type": "color",
+          "id": "border_color",
+          "label": "Couleur bordure",
+          "default": "#f0c040"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Curate Your Look",
+      "blocks": [
+        {
+          "type": "category_card",
+          "settings": {
+            "label": "Visage",
+            "border_color": "#f0c040"
+          }
+        },
+        {
+          "type": "category_card",
+          "settings": {
+            "label": "Lèvres",
+            "border_color": "#f4a0b8"
+          }
+        },
+        {
+          "type": "category_card",
+          "settings": {
+            "label": "Yeux",
+            "border_color": "#a8c8f0"
+          }
+        },
+        {
+          "type": "category_card",
+          "settings": {
+            "label": "Accessoires",
+            "border_color": "#c8a8f0"
+          }
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6
+}
+{% endschema %}
