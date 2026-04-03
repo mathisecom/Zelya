@@ -242,6 +242,32 @@
         "section_padding_h": 40
       }
     },
+    "featured_collection_rkW3L8": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "frontpage",
+        "products": [],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Nouveautés",
+        "content": "",
+        "link_url": "",
+        "link_text": "Découvrir",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "rich_text_4GxUBh": {
       "type": "rich-text",
       "blocks": {
@@ -366,6 +392,7 @@
     "collection_zelya_BHkfQw",
     "featured_collection_8pQAQE",
     "section_image_texte_m8JPb9",
+    "featured_collection_rkW3L8",
     "rich_text_4GxUBh",
     "testimonials_k49xMG"
   ]
