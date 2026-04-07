@@ -439,6 +439,7 @@
         "image_VF49L8": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Nouveauprojet_19.jpg",
             "link": "",
             "alt": "Photo Instagram"
           }
@@ -446,6 +447,7 @@
         "image_pBmz3r": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Nouveauprojet_11.jpg",
             "link": "",
             "alt": "Photo Instagram"
           }
