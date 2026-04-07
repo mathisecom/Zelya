@@ -216,6 +216,22 @@
         "product_card_text_color": ""
       }
     },
+    "scrolling_text_NHrFcz": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Promotion text",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "#fee9e8",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
     "text_with_icons_Yk83FM": {
       "type": "text-with-icons",
       "blocks": {
@@ -602,6 +618,7 @@
     "logoscroll_FQhXJx",
     "collection_zelya_BHkfQw",
     "featured_collection_8pQAQE",
+    "scrolling_text_NHrFcz",
     "text_with_icons_Yk83FM",
     "section_image_texte_m8JPb9",
     "video_8BRkjP",
