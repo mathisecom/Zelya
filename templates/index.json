@@ -465,6 +465,59 @@
         "testimonial_card_text_color": "#362828"
       }
     },
+    "faq_ip4tCb": {
+      "type": "faq",
+      "blocks": {
+        "item_HVPTqw": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "item_DwLfqa": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_eDMwfq": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_HVPTqw",
+        "item_DwLfqa",
+        "item_eDMwfq"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Questions Fréquentes",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "instagramfeed_fQBeVg": {
       "type": "instagramfeed",
       "blocks": {
@@ -555,6 +608,7 @@
     "featured_collection_rkW3L8",
     "rich_text_4GxUBh",
     "testimonials_k49xMG",
+    "faq_ip4tCb",
     "instagramfeed_fQBeVg"
   ]
 }
