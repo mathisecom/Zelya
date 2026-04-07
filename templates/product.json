@@ -241,10 +241,11 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "mobile_icon_width": 48,
-            "icon_width": 48,
+            "custom_icon": "shopify://shop_images/CREA_1080X1080_-_2026-04-07T171126.406.png",
+            "mobile_icon_width": 40,
+            "icon_width": 40,
             "icon_background_type": "circle",
-            "icon_background": "",
+            "icon_background": "#fee9e8",
             "icon_color": "",
             "title": "Coréen",
             "content": "<p>Leader mondial dans l'industrie de la beauté, les coréens sont à la pointe de la recherche et de l’innovation</p>"
@@ -255,10 +256,10 @@
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify://shop_images/CREA_1080X1080_-_2026-04-07T170940.418.png",
-            "mobile_icon_width": 48,
-            "icon_width": 48,
+            "mobile_icon_width": 40,
+            "icon_width": 40,
             "icon_background_type": "circle",
-            "icon_background": "",
+            "icon_background": "#fee9e8",
             "icon_color": "",
             "title": "Naturel",
             "content": "<p>Clean beauty aux actifs naturels dans des formulations haute technologie pour des soins d'exception</p>"
@@ -269,10 +270,10 @@
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify://shop_images/CREA_1080X1080_-_2026-04-07T171040.464.png",
-            "mobile_icon_width": 48,
-            "icon_width": 48,
+            "mobile_icon_width": 40,
+            "icon_width": 40,
             "icon_background_type": "circle",
-            "icon_background": "",
+            "icon_background": "#fee9e8",
             "icon_color": "",
             "title": "Qualité Kbeauty",
             "content": "<p>Des produits vraiment efficaces, avec un bon rapport qualité prix, facilement accessibles</p>"
