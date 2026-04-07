@@ -82,6 +82,7 @@
           "type": "description",
           "settings": {
             "icon": "none",
+            "custom_icon": "shopify://shop_images/CREA_1080X1080_-_2026-04-07T164933.402.png",
             "icon_width": 20,
             "collapse_content": true
           }
@@ -90,6 +91,7 @@
           "type": "collapsible_text",
           "settings": {
             "icon": "picto-box",
+            "custom_icon": "shopify://shop_images/CREA_1080X1080_-_2026-04-07T165008.391.png",
             "icon_width": 20,
             "title": "Livraison & Retours",
             "content": "<p>Share some content to your customers about your products.</p>",
