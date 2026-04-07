@@ -37,12 +37,12 @@
         "enable_sticky": false,
         "autoplay": true,
         "cycle_speed": 6,
-        "text_size": "text-xs",
+        "text_size": "text-xxs",
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
         "background": "#fee9e8",
         "background_gradient": "",
-        "text_color": "#232323"
+        "text_color": "#0e0e0e"
       }
     },
     "header": {
