@@ -268,6 +268,22 @@
         "product_card_text_color": ""
       }
     },
+    "video_8BRkjP": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": true,
+        "video_size": "auto",
+        "video": "shopify://files/videos/cc9c0bbef83240df91f5cbc1938657b8.HD-1080p-7.2Mbps-31508272.mp4",
+        "mobile_video": "shopify://files/videos/6b4535243d2c4cb39921586066e997f8.HD-720p-3.0Mbps-31508279.mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 46
+      }
+    },
     "rich_text_4GxUBh": {
       "type": "rich-text",
       "blocks": {
@@ -468,6 +484,7 @@
     "featured_collection_8pQAQE",
     "section_image_texte_m8JPb9",
     "featured_collection_rkW3L8",
+    "video_8BRkjP",
     "rich_text_4GxUBh",
     "testimonials_k49xMG",
     "instagramfeed_fQBeVg"
