@@ -223,7 +223,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "Coréen",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+            "content": "<p>Leader mondial dans l'industrie de la beauté, les coréens sont à la pointe de la recherche et de l’innovation</p>"
           }
         },
         "item_7yMcYU": {
@@ -236,7 +236,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "Naturel",
-            "content": "<p>We are available from monday to friday to answer your questions.</p>"
+            "content": "<p>Clean beauty aux actifs naturels dans des formulations haute technologie pour des soins d'exception</p>"
           }
         },
         "item_tL3KiK": {
@@ -249,7 +249,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "Qualité Kbeauty",
-            "content": "<p>Your payment information is processed securely.</p>"
+            "content": "<p>Des produits vraiment efficaces, avec un bon rapport qualité prix, facilement accessibles</p>"
           }
         }
       },
@@ -260,7 +260,7 @@
       ],
       "name": "Text with icons",
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
         "title": "",
         "heading_tag": "h5",
