@@ -27,11 +27,11 @@
         "contact_form_size": "large",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#362828",
         "heading_color": "",
         "heading_gradient": "",
-        "contact_background": "",
-        "contact_text_color": "",
+        "contact_background": "#fffcf9",
+        "contact_text_color": "#362828",
         "button_background": "",
         "button_text_color": ""
       }
