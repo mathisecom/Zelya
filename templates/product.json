@@ -98,6 +98,7 @@
         },
         "collapsible_text_egAiD8": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "icon": "picto-return",
             "icon_width": 20,
