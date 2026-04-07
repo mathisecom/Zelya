@@ -77,9 +77,9 @@
         "collapsible_text_WjEG9V": {
           "type": "collapsible_text",
           "settings": {
-            "icon": "none",
+            "icon": "picto-box",
             "icon_width": 20,
-            "title": "Informations de livraisons",
+            "title": "Livraison & Retours",
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
@@ -87,7 +87,7 @@
         "collapsible_text_egAiD8": {
           "type": "collapsible_text",
           "settings": {
-            "icon": "none",
+            "icon": "picto-return",
             "icon_width": 20,
             "title": "Title",
             "content": "<p>Share some content to your customers about your products.</p>",
