@@ -52,48 +52,48 @@
     "logoscroll_FQhXJx": {
       "type": "logoscroll",
       "blocks": {
-        "image_LgUKQ7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/elle-logo_1.webp",
-            "url": ""
-          }
-        },
-        "image_f8LzNq": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/vogue-logo_1.webp",
-            "url": ""
-          }
-        },
-        "image_qVaLfV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/bazaar-logo_1.webp",
-            "url": ""
-          }
-        },
-        "image_AchRLq": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/allure-logo_1.webp",
-            "url": ""
-          }
-        },
         "image_UmhR3p": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Nouveau_projet_11.png",
+            "image": "shopify://shop_images/Nouveau_projet_16.png",
+            "url": ""
+          }
+        },
+        "image_6tyfJV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Nouveau_projet_14.png",
+            "url": ""
+          }
+        },
+        "image_XqLhbA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Nouveau_projet_13.png",
+            "url": ""
+          }
+        },
+        "image_J6r7n8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Nouveau_projet_15.png",
+            "url": ""
+          }
+        },
+        "image_mgW8AD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Nouveau_projet_17.png",
             "url": ""
           }
         }
       },
       "block_order": [
-        "image_LgUKQ7",
-        "image_f8LzNq",
-        "image_qVaLfV",
-        "image_AchRLq",
-        "image_UmhR3p"
+        "image_UmhR3p",
+        "image_6tyfJV",
+        "image_XqLhbA",
+        "image_J6r7n8",
+        "image_mgW8AD"
       ],
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
