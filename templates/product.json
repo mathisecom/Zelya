@@ -21,7 +21,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h2"
+            "heading_tag": "h3"
           }
         },
         "badges": {
@@ -79,7 +79,7 @@
           "settings": {
             "icon": "none",
             "icon_width": 20,
-            "title": "Title",
+            "title": "Informations de livraisons",
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
