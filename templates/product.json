@@ -340,9 +340,9 @@
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "John S.",
-            "title": "Testimonial 1",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "author": "Marine L.",
+            "title": "Ma boutique K-beauty préférée !",
+            "content": "<p>Large choix, prix honnêtes, livraison toujours rapide. Je commande depuis un an sans jamais être déçue.</p>"
           }
         },
         "testimonial_ke4Vii": {
@@ -351,9 +351,9 @@
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
-            "author": "Mary U.",
-            "title": "Testimonial 2",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "author": "Chloé V.",
+            "title": "Je recommande !",
+            "content": "<p>Site clair, fiches produits très détaillées et échantillons offerts à chaque commande. Un vrai plus pour tester avant d'acheter !</p>"
           }
         },
         "testimonial_bmhjJj": {
@@ -362,16 +362,40 @@
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "Joshua A.",
-            "title": "Testimonial 3",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "author": "Louise K.",
+            "title": "Franchement incroyable !",
+            "content": "<p>Les produits coréens sont authentiques et j’ai vu une vraie différence sur ma peau en quelques jours. Livraison rapide et packaging trop mignon 💖</p>"
+          }
+        },
+        "testimonial_HNCrVf": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Nia L.",
+            "title": "Je recommande à 100% !",
+            "content": "<p>Super découverte ! Les routines K-beauty proposées sont claires et adaptées. J’avais peur de me tromper mais tout est bien expliqué. Je recommande à 100% !</p>"
+          }
+        },
+        "testimonial_Mz8PX6": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Louise K.",
+            "title": "Franchement incroyable !",
+            "content": "<p>Les produits coréens sont authentiques et j’ai vu une vraie différence sur ma peau en quelques jours. Livraison rapide et packaging trop mignon 💖</p>"
           }
         }
       },
       "block_order": [
         "testimonial_6XVtPY",
         "testimonial_ke4Vii",
-        "testimonial_bmhjJj"
+        "testimonial_bmhjJj",
+        "testimonial_HNCrVf",
+        "testimonial_Mz8PX6"
       ],
       "name": "Testimonials",
       "settings": {
