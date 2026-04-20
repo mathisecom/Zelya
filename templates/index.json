@@ -137,6 +137,22 @@
     "collection_zelya_BHkfQw": {
       "type": "collection-zelya",
       "blocks": {
+        "category_card_njjKet": {
+          "type": "category_card",
+          "settings": {
+            "label": "Skincare",
+            "collection_url": "",
+            "border_color": "#362828"
+          }
+        },
+        "category_card_NXTzwz": {
+          "type": "category_card",
+          "settings": {
+            "label": "Makeup",
+            "collection_url": "",
+            "border_color": "#362828"
+          }
+        },
         "category_card_Miy6Rr": {
           "type": "category_card",
           "settings": {
@@ -175,6 +191,8 @@
         }
       },
       "block_order": [
+        "category_card_njjKet",
+        "category_card_NXTzwz",
         "category_card_Miy6Rr",
         "category_card_wgx8gG",
         "category_card_pt364U",
