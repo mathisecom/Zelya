@@ -404,8 +404,8 @@
         "item_9ApWtP": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "title": "En combien de temps vais-je recevoir ma commande ?",
+            "content": "<p>Les commandes sont expédiées <strong>sous 24h</strong> (hors week-end et jours fériés) depuis notre entrepôt.</p><p><strong>La livraison offerte</strong> à domicile dès 50€, prennent <strong>2 à 5 jours ouvrés en France.</strong></p>"
           }
         },
         "item_m6wyqK": {
