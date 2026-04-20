@@ -509,21 +509,21 @@
           "type": "item",
           "settings": {
             "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "content": "<p>Oui, <strong>100%</strong>. Tous nos soins sont importés directement depuis la Corée du Sud auprès des marques officielles, et stockés en France. Nous garantissons <strong>la traçabilité et l’authenticité</strong> de chaque produit. </p>"
           }
         },
         "item_DwLfqa": {
           "type": "item",
           "settings": {
             "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "content": "<p>Les commandes sont expédiées <strong>sous 24h</strong> (hors week-end et jours fériés) depuis notre entrepôt.</p><p><strong>La livraison offerte</strong> à domicile dès 50€, prennent <strong>2 à 5 jours ouvrés en France.</strong></p>"
           }
         },
         "item_eDMwfq": {
           "type": "item",
           "settings": {
             "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "content": "<p>Oui, vous avez <strong>14 jours</strong> pour nous le renvoyer si le produit n’a pas été ouvert.</p><p>Il suffit de nous contacter via <strong>la page contact </strong>ou directement par mail : <strong>zelyasupport@gmail.com </strong>et on s’occupera du reste !</p>"
           }
         }
       },
