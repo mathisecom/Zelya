@@ -289,13 +289,29 @@
       "settings": {
         "full_width": false,
         "stack_on_mobile": false,
-        "title": "",
+        "title": "Pourquoi Nous Choisir ?",
         "heading_tag": "h5",
         "text_alignment": "center",
         "icon_spacing": "medium",
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "scrolling_text_tEGnYW": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Promotion text",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "#fee9e8",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
       }
     },
     "rich_text_J3rH73": {
@@ -495,6 +511,7 @@
     "main",
     "logoscroll_h3JyXz",
     "text_with_icons_fTM8bk",
+    "scrolling_text_tEGnYW",
     "rich_text_J3rH73",
     "testimonials_Wiif4m",
     "faq_DBfRF7",
