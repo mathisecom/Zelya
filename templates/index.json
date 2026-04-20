@@ -363,8 +363,38 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "collection": "frontpage",
-        "products": [],
+        "collection": "",
+        "products": [
+          "pink-collagen-capsule-cream",
+          "serum-pour-le-visage-au-retinol",
+          "dr-althea-creme-regenerante",
+          "serum-pour-le-visage-niacinamide-10-txa-4",
+          "serum-aux-polynucleotides-et-peptides",
+          "spray-fixateur-press-refresh",
+          "tint-lock-tattoo-gel-a-sourcils-pelable",
+          "masque-tissu-avocat-1pcs",
+          "masque-tissu-aloe-1pcs",
+          "masque-de-nuit-au-collagene",
+          "madagascar-centella-ampoule-foam",
+          "lashlighter-up-out-mascara-pour-cils",
+          "huile-demaquillante-centella-madagascar",
+          "glass-lock-air-brillant-a-levres",
+          "fond-de-teint-mat-respirant-longue-tenue",
+          "fond-de-teint-hydratant-skinfinite-truffe",
+          "fard-a-joues-liquide-color-bloom",
+          "essence-liftante-pour-le-visage-no-9",
+          "essence-avec-probiotiques-et-extrait-de-riz-noir",
+          "enlumineur-liquide-glow-bloom",
+          "duo-de-poudres-fixatrices-pour-le-visage-et-le-dessous-des-yeux",
+          "dr-althea-gentle-vitamin-c-serum",
+          "creme-yeux-au-retinol-no-9-nad",
+          "creme-booster-au-retinal-the-vita-a",
+          "crayon-a-levres-so-lippy",
+          "camera-on-lissant-floutant-base-de-teint",
+          "brow-fection-micro-stroke-stylo-liquide-a-sourcils",
+          "biodance-masque-profond-bio-collagene",
+          "base-pore-no-more"
+        ],
         "full_width": false,
         "stack_products": false,
         "show_progress_bar": true,
@@ -522,7 +552,7 @@
         "item_eDMwfq": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
+            "title": "Puis-je retourner un produit s’il ne me convient pas ?",
             "content": "<p>Oui, vous avez <strong>14 jours</strong> pour nous le renvoyer si le produit n’a pas été ouvert.</p><p>Il suffit de nous contacter via <strong>la page contact </strong>ou directement par mail : <strong>zelyasupport@gmail.com </strong>et on s’occupera du reste !</p>"
           }
         }
