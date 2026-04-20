@@ -411,8 +411,8 @@
         "item_m6wyqK": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Puis-je retourner un produit s’il ne me convient pas ?",
+            "content": "<p>Oui, vous avez <strong>14 jours</strong> pour nous le renvoyer si le produit n’a pas été ouvert.</p><p>Il suffit de nous contacter via <strong>la page contact </strong>ou directement par mail : <strong>zelyasupport@gmail.com </strong>et on s’occupera du reste !</p>"
           }
         }
       },
