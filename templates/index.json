@@ -508,14 +508,14 @@
         "item_HVPTqw": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
+            "title": "Vos produits sont-ils authentiques ?",
             "content": "<p>Oui, <strong>100%</strong>. Tous nos soins sont importés directement depuis la Corée du Sud auprès des marques officielles, et stockés en France. Nous garantissons <strong>la traçabilité et l’authenticité</strong> de chaque produit. </p>"
           }
         },
         "item_DwLfqa": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
+            "title": "En combien de temps vais-je recevoir ma commande ?",
             "content": "<p>Les commandes sont expédiées <strong>sous 24h</strong> (hors week-end et jours fériés) depuis notre entrepôt.</p><p><strong>La livraison offerte</strong> à domicile dès 50€, prennent <strong>2 à 5 jours ouvrés en France.</strong></p>"
           }
         },
