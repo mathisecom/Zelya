@@ -148,6 +148,7 @@
         "category_card_NXTzwz": {
           "type": "category_card",
           "settings": {
+            "image": "shopify://shop_images/CREA_1080X1080_-_2026-04-21T151958.749.jpg",
             "label": "Makeup",
             "collection_url": "",
             "border_color": "#362828"
