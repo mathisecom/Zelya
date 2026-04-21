@@ -303,11 +303,11 @@
       "name": "Scrolling text",
       "settings": {
         "full_width": true,
-        "text": "Promotion text",
+        "text": "L’excellence coréenne directement chez vous !",
         "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
-        "scrolling_speed": 10,
+        "scrolling_speed": 7,
         "background": "#fee9e8",
         "background_gradient": "",
         "text_color": "",
