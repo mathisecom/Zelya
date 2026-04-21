@@ -307,7 +307,7 @@
         "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
-        "scrolling_speed": 7,
+        "scrolling_speed": 6,
         "background": "#fee9e8",
         "background_gradient": "",
         "text_color": "",
