@@ -15,6 +15,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/BANNER_PC_21.jpg",
             "mobile_image": "shopify://shop_images/BANNER_MOBILE_94.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
@@ -28,7 +29,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -39,7 +40,7 @@
       ],
       "settings": {
         "full_width": true,
-        "allow_transparent_header": true,
+        "allow_transparent_header": false,
         "show_initial_transition": false,
         "image_size": "md",
         "controls_type": "numbers",
