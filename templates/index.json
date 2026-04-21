@@ -143,7 +143,7 @@
           "settings": {
             "image": "shopify://shop_images/CREA_1080X1080_-_2026-04-20T145753.411.jpg",
             "label": "Skincare",
-            "collection_url": "",
+            "collection_url": "shopify://collections/skincare",
             "border_color": "#362828"
           }
         },
@@ -152,7 +152,7 @@
           "settings": {
             "image": "shopify://shop_images/CREA_1080X1080_-_2026-04-21T151958.749.jpg",
             "label": "Makeup",
-            "collection_url": "",
+            "collection_url": "shopify://collections/makeup",
             "border_color": "#362828"
           }
         },
