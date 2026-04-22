@@ -15,7 +15,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/40_Rabatt_4.svg",
+            "image": "shopify://shop_images/40_Rabatt_4.jpg",
             "mobile_image": "shopify://shop_images/BANNER_MOBILE_97.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
