@@ -549,7 +549,7 @@
           "type": "item",
           "settings": {
             "title": "En combien de temps vais-je recevoir ma commande ?",
-            "content": "<p>Les commandes sont expédiées <strong>sous 24h</strong> (hors week-end et jours fériés) depuis notre entrepôt.</p><p>La livraison prend entre 1 à 5 jours selon la wilaya.</p>"
+            "content": "<p>Les commandes sont expédiées <strong>sous 24h</strong> (hors week-end et jours fériés) depuis notre entrepôt.</p><p>La livraison prend entre <strong>1 à 5 jours</strong> selon la wilaya.</p>"
           }
         },
         "item_eDMwfq": {
