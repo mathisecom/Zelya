@@ -100,7 +100,7 @@
             "custom_icon": "shopify://shop_images/CREA_1080X1080_-_2026-04-07T165008.391.png",
             "icon_width": 20,
             "title": "Livraison & Retours",
-            "content": "<p>Les commandes sont expédiées <strong>sous 24h</strong> (hors week-end et jours fériés) depuis notre entrepôt.</p><p><strong>La livraison offerte</strong> à domicile dès 50€, prennent <strong>2 à 5 jours ouvrés en France.</strong></p>",
+            "content": "<p>Les commandes sont <strong>expédiées sous 24h</strong> (hors week-end et jours fériés) depuis notre entrepôt. La livraison prend <strong>entre 1 à 5 jours</strong> selon la wilaya.</p>",
             "page": ""
           }
         },
