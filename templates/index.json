@@ -261,6 +261,7 @@
       "blocks": {
         "item_QGqqHD": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-coupon",
             "custom_icon": "shopify://shop_images/01151ed3d20190f4242feffa52053220d7fb754e_1.png",
