@@ -35,7 +35,7 @@
     "text_font": "figtree_n4",
     "text_font_letter_spacing": -2,
     "heading_apparition": "split_fade",
-    "color_swatch_config": "Neutral: #A57A74\nMisty Rose: #9A5051\nChantilly: #F7EFE8\nHoney Glaze: #A06A6F\nRosé Veil: #E8A0A6\nCherry Gleam: #C73A4A\nStrawberry Milk: #F4A7B9\nHigh Key: #F58FA8\nThat’s My Jam: #C94A6A\nBorn Ready: #D98C7A\nGuava Glow: #F28C7A\nBare Stack: #CFA08B\nPinky Promise: #F6A1B5\nMauvelous: #B7849C\nMatinée in LA: #C98A6A\nRust Ritual: #8B3A2B\nSpellbound: #A68BBE\nHigher Self: #E6C7B5\nChocolate: #6B3F2A\nTaupe: #8B7D72\nNude: #E2C6B2\nHoney: #D8A15A\nWheat: #E7D3B0\nShell: #F3D9D2\nSand: #C2A078\nGolden Sun: #D89A4B\nTawny Amber: #C7864D\nBrown Sugar: #B57A4A\nLove Cake: #E08AA6\nRose Ritual: #D77A8A",
+    "color_swatch_config": "Neutral: #A57A74\nMisty Rose: #9A5051\nChantilly: #F7EFE8\nHoney Glaze: #A06A6F\nRosé Veil: #E8A0A6\nCherry Gleam: #C73A4A\nStrawberry Milk: #F4A7B9\nHigh Key: #F58FA8\nThat’s My Jam: #C94A6A\nBorn Ready: #D98C7A\nGuava Glow: #F28C7A\nBare Stack: #CFA08B\nPinky Promise: #F6A1B5\nMauvelous: #B7849C\nMatinée in LA: #C98A6A\nRust Ritual: #8B3A2B\nSpellbound: #A68BBE\nHigher Self: #E6C7B5\nChocolate: #6B3F2A\nTaupe: #8B7D72\nNude: #E2C6B2\nHoney: #D8A15A\nWheat: #E7D3B0\nShell: #F3D9D2\nSand: #C2A078\nGolden Sun: #D89A4B\nTawny Amber: #C7864D\nBrown Sugar: #B57A4A\nLove Cake: #E08AA6\nRose Ritual: #D77A8A\nVanilla Frost: #F4E9DA",
     "product_color_display": "swatch",
     "product_info_alignment": "center",
     "cart_type": "drawer",
