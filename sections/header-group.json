@@ -20,18 +20,10 @@
             "text": "LIVRAISON OFFERTE : À PARTIR DE 12000DA",
             "url": ""
           }
-        },
-        "message_xPE9Fi": {
-          "type": "message",
-          "settings": {
-            "text": "SATISFAIT OU REMBOURSÉ 30 JOURS",
-            "url": ""
-          }
         }
       },
       "block_order": [
-        "message",
-        "message_xPE9Fi"
+        "message"
       ],
       "settings": {
         "enable_sticky": false,
