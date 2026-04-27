@@ -35,7 +35,7 @@
     "text_font": "figtree_n4",
     "text_font_letter_spacing": -2,
     "heading_apparition": "split_fade",
-    "color_swatch_config": "Neutral: #A57A74\nMisty Rose: #9A5051\nChantilly: #F7EFE8\nHoney Glaze: #A06A6F\nRosé Veil: #E8A0A6\nCherry Gleam: #C73A4A\nMatinée in LA: #C98A6A\nRust Ritual: #8B3A2B",
+    "color_swatch_config": "Neutral: #A57A74\nMisty Rose: #9A5051\nChantilly: #F7EFE8\nHoney Glaze: #A06A6F\nRosé Veil: #E8A0A6\nCherry Gleam: #C73A4A\nMatinée in LA: #C98A6A\nRust Ritual: #8B3A2B\nSpellbound: #A68BBE",
     "product_color_display": "swatch",
     "product_info_alignment": "center",
     "cart_type": "drawer",
