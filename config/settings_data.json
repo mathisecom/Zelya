@@ -44,7 +44,14 @@
     "favicon": "shopify://shop_images/CREA_1080X1080_-_2026-04-07T163421.390.png",
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "6779579260278573237": {
+        "type": "shopify://apps/orichi-facebook-pixels/blocks/orichi-pixel/67bf7d46-e794-4117-adb7-273fd162e4d1",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "presets": {
     "Sound": {
